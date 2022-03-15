@@ -1,9 +1,7 @@
 import './css/sidemenu.css'
 import './css/btn-colors.css'
 import { statusTick } from './statusTick'
-import { useNavigate } from "react-router-dom" 
 export const SideBar = () => { 
-  const navigate = useNavigate()
   const check = () => {
     localStorage.getItem("ContactStatus")?alert("Success"):alert("Complete Contact Details First")
   }
