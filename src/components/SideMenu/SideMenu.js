@@ -2,9 +2,10 @@ import './css/sidemenu.css'
 import './css/btn-colors.css'
 import { statusTick } from './statusTick'
 export const SideBar = () => { 
-  const check = () => {
-    localStorage.getItem("ContactStatus")?alert("Success"):alert("Complete Contact Details First")
-  }
+
+  /*const check = () => {
+    localStorage.getItem("ContactStatus")?window.location.assign("/Resume"):alert("Complete Contact Details First")
+  }*/
   const side = () =>{
     return <div>
     <div class="left-side">
@@ -16,8 +17,8 @@ export const SideBar = () => {
         <a href="" class="text-white"><br/><strong>Area Of Intrest {localStorage.getItem("BasicStatus")?statusTick():""}</strong><br/></a>
         <a href="" class="text-white"><br/><strong>Certification Details {localStorage.getItem("BasicStatus")?statusTick():""}</strong><br/></a>
         <a href="" class="text-white"><br/><strong>Family Details {localStorage.getItem("BasicStatus")?statusTick():""}</strong><br/></a>
-        <a href="" class="text-white"><br/><strong>Declaration {localStorage.getItem("BasicStatus")?statusTick():""}</strong><br/></a>
-        <a onClick={()=>{check()}} class="text-white"><br/><strong>Download Resume<br/>&nbsp;<br/>&nbsp;</strong></a>
+        <a href="" class="text-white"><br/><strong>Addtional Details {localStorage.getItem("BasicStatus")?statusTick():""}</strong><br/></a>
+        <a class="text-white"><br/><strong>Declaration<br/>&nbsp;<br/>&nbsp;</strong></a>
   </div>
   
     </div>
